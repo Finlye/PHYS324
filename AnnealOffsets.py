@@ -224,7 +224,7 @@ v = min(offset_max) #This is the minimum of the maximum offsets. this is possibl
 
 embedding = checkembedding()
 print("Making QUBO...")
-makeQUBO(trackList, numOfClusters, 1) #This generates a Hamiltonian with the error adjusted points, the amount of cluster specified at the beginning, and with a stregth of constraint of 1
+makeQUBO(trackList, numOfClusters, 2) #This generates a Hamiltonian with the error adjusted points, the amount of cluster specified at the beginning, and with a stregth of constraint of 1
 print("Started final solve...")
 #This tabulates the results from the QPU with a specified number of reads. It also takes the offsets that were created by the createOffsets function. 
 #The first bool is for if the offsets should be used or not. The second is for if it should print the raw output from the QPU (untabulated)
